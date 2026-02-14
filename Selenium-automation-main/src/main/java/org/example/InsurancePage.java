@@ -18,11 +18,12 @@ public class InsurancePage extends BtlBasePage {
         return title.getText();
     }
 
-    public void clickOnCalculatorLink() {
+    public InsuranceCalculatorPage clickOnCalculatorLink() {
         WebElement calculatorLink = wait.until(
                 ExpectedConditions.elementToBeClickable(
                         By.partialLinkText("מחשבון"))
         );
         calculatorLink.click();
+        return new InsuranceCalculatorPage(driver);
     }
 }

@@ -5,6 +5,6 @@ public enum MainMenu {
     MEYDA_VE_ZCHUYOT, // מידע וזכויות
     SHIRUT_ISHI,      // שירות אישי
     TASHUMIM,         // תשלומים
-    Odot ,
-
+    DMEY_BITUACH,     // דמי ביטוח
+    Odot
 }

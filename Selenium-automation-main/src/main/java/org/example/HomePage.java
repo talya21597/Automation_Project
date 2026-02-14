@@ -8,5 +8,15 @@ public class HomePage extends BtlBasePage {
         super(driver);
     }
 
-    // כאן יוצבו אלמנטים שקיימים אך ורק בדף הבית (למשל באנר מרכזי)
+    public InsurancePage navigateToInsurance() {
+        clickMainMenu(MainMenu.DMEY_BITUACH);
+        clickSubMenu("דמי ביטוח לאומי");
+        return new InsurancePage(driver);
+    }
+    
+    public UnemploymentPage navigateToUnemployment() {
+        clickMainMenu(MainMenu.KITZBAOT_VE_HATAVOT);
+        clickSubMenu("אבטלה");
+        return new UnemploymentPage(driver);
+    }
 }
